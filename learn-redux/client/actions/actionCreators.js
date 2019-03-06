@@ -16,10 +16,11 @@ export function addComment(postId, author, comment) {
 }
 
 //remove comment
-export function removeComment(postId, index) {
+export function removeComment(postId, i) {
+  // console.log(`Dispatching: ${postId}, ${i}`);
   return {
     type: "REMOVE_COMMENT",
     postId,
-    index
+    i
   };
 }
